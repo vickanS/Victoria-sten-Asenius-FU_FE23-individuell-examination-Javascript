@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 1440px;
+}
+
+#planet-box {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 30px;
+}
+
+#planet1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(217, 255, 0);
+    border-radius: 50px;
+}
+
+#planet2 {
+    width: 35px;
+    height: 35px;
+    background-color: brown;
+    border-radius: 50px;
+}
+
+#planet3 {
+    width: 34px;
+    height: 34px;
+    background-color: brown;
+    border-radius: 50px;
+}
+
+#planet4 {
+    width: 33px;
+    height: 33px;
+    background-color: brown;
+    border-radius: 50px;
+}
+
+#planet5 {
+    width: 55px;
+    height: 55px;
+    background-color: rgb(68, 61, 171);
+    border-radius: 50px;
+}
+
+#planet6 {
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 50px;
+}
+
+#planet7 {
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 50px;
+}
+
+#planet8 {
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 50px;
+}
+
+#planet9 {
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 50px;
+}
