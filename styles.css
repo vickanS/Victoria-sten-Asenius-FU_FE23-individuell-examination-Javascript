@@ -4,53 +4,58 @@
 
 body {
     background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     max-width: 1440px;
 }
 
-#planet-box {
+form {
+    position: relative;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+}
+
+#planet-box {
+    display: flex;
+    position: relative;
+    top: 300px;
+    justify-content: space-evenly;
     align-items: center;
-    width: 500px;
+    width: 100%;
     height: 30px;
 }
 
 #planet1 {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    
     background-color: rgb(217, 255, 0);
-    border-radius: 50px;
+    border-radius: 150px;
 }
 
 #planet2 {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     background-color: brown;
     border-radius: 50px;
 }
 
 #planet3 {
-    width: 34px;
-    height: 34px;
+    width: 44px;
+    height: 44px;
     background-color: brown;
     border-radius: 50px;
 }
 
 #planet4 {
-    width: 33px;
-    height: 33px;
+    width: 43px;
+    height: 43px;
     background-color: brown;
     border-radius: 50px;
 }
 
 #planet5 {
-    width: 55px;
-    height: 55px;
+    width: 65px;
+    height: 65px;
     background-color: rgb(68, 61, 171);
     border-radius: 50px;
 }
@@ -63,15 +68,19 @@ body {
 }
 
 #planet7 {
-    width: 20px;
-    height: 20px;
-    background-color: brown;
-    border-radius: 50px;
+    width: 140px;
+    height: 140px;
+    background-color: rgb(24, 98, 55);
+    border-radius: 140px;
+}
+
+input {
+    margin-left: 15px;
 }
 
 #planet8 {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background-color: brown;
     border-radius: 50px;
 }
