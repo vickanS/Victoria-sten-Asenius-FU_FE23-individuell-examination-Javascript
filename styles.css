@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: blue;
+    background-color: navy;
     min-height: 100vh;
     max-width: 1440px;
 }
@@ -25,53 +25,52 @@ form {
 }
 
 #planet1 {
-    width: 150px;
-    height: 150px;
-    
+    width: 500px;
+    height: 500px;
     background-color: rgb(217, 255, 0);
-    border-radius: 150px;
+    border-radius: 500px;
 }
 
 #planet2 {
-    width: 45px;
-    height: 45px;
-    background-color: brown;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(84, 82, 82);
     border-radius: 50px;
 }
 
 #planet3 {
-    width: 44px;
-    height: 44px;
-    background-color: brown;
+    width: 25px;
+    height: 25px;
+    background-color: lightgray;
     border-radius: 50px;
 }
 
 #planet4 {
-    width: 43px;
-    height: 43px;
-    background-color: brown;
+    width: 27px;
+    height: 27px;
+    background-color: rgb(41, 111, 203);
     border-radius: 50px;
 }
 
 #planet5 {
-    width: 65px;
-    height: 65px;
-    background-color: rgb(68, 61, 171);
+    width: 10px;
+    height: 10px;
+    background-color: rgb(217, 98, 55);
     border-radius: 50px;
 }
 
 #planet6 {
-    width: 20px;
-    height: 20px;
-    background-color: brown;
-    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(235, 138, 100);
+    border-radius: 150px;
 }
 
 #planet7 {
-    width: 140px;
-    height: 140px;
-    background-color: rgb(24, 98, 55);
-    border-radius: 140px;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(242, 242, 168);
+    border-radius: 120px;
 }
 
 input {
@@ -79,15 +78,15 @@ input {
 }
 
 #planet8 {
-    width: 25px;
-    height: 25px;
-    background-color: brown;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(197, 224, 234);
     border-radius: 50px;
 }
 
 #planet9 {
-    width: 20px;
-    height: 20px;
-    background-color: brown;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(184, 197, 201);
     border-radius: 50px;
 }
