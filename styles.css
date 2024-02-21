@@ -1,17 +1,75 @@
+:root {
+    --main-bg-color: #0C164D;
+    --secondary-bg-color: #190B22;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: navy;
+    background: linear-gradient(-90deg, var(--main-bg-color), var(--secondary-bg-color));
     min-height: 100vh;
     max-width: 1440px;
 }
 
-form {
-    position: relative;
+header {
     display: flex;
     justify-content: center;
+}
+
+form {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #FFD029;
+}
+
+#searchfield {
+    background: linear-gradient(-90deg, var(--main-bg-color), var(--secondary-bg-color));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #FFD029;
+    border-radius: 10px;
+    border-color: #FFD029;
+    box-shadow: 0 0 25px #FFD029;
+    border-style: none;
+    outline: #FFD029;
+}
+
+input {
+    margin-left: 20px;
+}
+
+#searchbtn {
+    background: linear-gradient(-90deg, var(--main-bg-color), var(--secondary-bg-color));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #FFD029; 
+    border-radius: 15px;
+    border-color: #FFD029;
+    box-shadow: 0 0 15px #FFD029;
+    border-style: none; 
+}
+
+#headertext {
+    position: relative;
+    margin-left: 1000px;
+}
+
+h1 {
+    font-family: 'Secular One', serif;
+    color: white;
+    
+}
+
+p {
+    font-family: 'Lora', sans-serif;
+    color: #FFD029;
+    align-items: flex-end;
 }
 
 #planet-box {
@@ -25,6 +83,8 @@ form {
 }
 
 #planet1 {
+    position: relative;
+    left: -450px;
     width: 500px;
     height: 500px;
     background-color: rgb(217, 255, 0);
@@ -32,6 +92,8 @@ form {
 }
 
 #planet2 {
+    position: relative;
+    left: -390px;
     width: 10px;
     height: 10px;
     background-color: rgb(84, 82, 82);
@@ -39,6 +101,8 @@ form {
 }
 
 #planet3 {
+    position: relative;
+    left: -330px;
     width: 25px;
     height: 25px;
     background-color: lightgray;
@@ -46,6 +110,8 @@ form {
 }
 
 #planet4 {
+    position: relative;
+    left: -270px;
     width: 27px;
     height: 27px;
     background-color: rgb(41, 111, 203);
@@ -53,6 +119,8 @@ form {
 }
 
 #planet5 {
+    position: relative;
+    left: -210px;
     width: 10px;
     height: 10px;
     background-color: rgb(217, 98, 55);
@@ -60,6 +128,8 @@ form {
 }
 
 #planet6 {
+    position: relative;
+    left: -150px;
     width: 150px;
     height: 150px;
     background-color: rgb(235, 138, 100);
@@ -67,17 +137,17 @@ form {
 }
 
 #planet7 {
+    position: relative;
+    left: -90px;
     width: 120px;
     height: 120px;
     background-color: rgb(242, 242, 168);
     border-radius: 120px;
 }
 
-input {
-    margin-left: 15px;
-}
-
 #planet8 {
+    position: relative;
+    left: -30px;
     width: 45px;
     height: 45px;
     background-color: rgb(197, 224, 234);
@@ -85,6 +155,8 @@ input {
 }
 
 #planet9 {
+    position: relative;
+    right: 10px;
     width: 45px;
     height: 45px;
     background-color: rgb(184, 197, 201);
