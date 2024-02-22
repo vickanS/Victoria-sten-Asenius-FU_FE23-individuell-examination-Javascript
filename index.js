@@ -1,4 +1,4 @@
-document.getElementById('searchbtn').addEventListener('click', function(event) {  
+document.getElementById('searchbtn').addEventListener('click', function(event) { 
     event.preventDefault(); 
 
     async function fetchData() {
@@ -10,10 +10,26 @@ document.getElementById('searchbtn').addEventListener('click', function(event) {
         });
       
         let data = await resp.json();
+        console.log(data.bodies);
+
         let searchValue = document.getElementById('searchfield').value;
         let filteredData = data.bodies.filter(function(body) {
           return body.name.toLowerCase() === searchValue.toLowerCase();
         });
+
+        if (filteredData.length > 0) {
+            var planet = filteredData[0]; // antar att vi bara har ett matchande resultat
+            console.log(planet);
+            document.getElementById('overlayheader').innerHTML = planet.name;
+            document.getElementById('overlayinfo').innerHTML = 
+          'Circumference: ' + planet.circumference + ' km, ' +
+          'Description: ' + planet.desc + ', ' +
+          'Distance from Sun: ' + planet.distance + ' km, ' +
+          'Orbital Period: ' + planet.orbitalPeriod + ' days, ' +
+          'Rotation: ' + planet.rotation + ' hours, ' +
+          'Temperature: ' + planet.temp.day + '°C (day), ' + planet.temp.night + '°C (night)';
+            document.getElementById('overlay').style.display = 'block';
+          }
         console.log(filteredData);
       }
       
