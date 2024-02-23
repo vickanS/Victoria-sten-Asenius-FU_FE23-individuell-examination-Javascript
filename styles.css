@@ -128,7 +128,9 @@ p {
     left: 450px;
     min-width: 40px;
     min-height: 40px;
+    background-color: #190B22;
     color: #ffffff;
+    border: none;
     font-family: 'Secular One', serif;
   }
 
