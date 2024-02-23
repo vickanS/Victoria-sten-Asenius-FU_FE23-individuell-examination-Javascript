@@ -36,6 +36,16 @@ document.getElementById('searchbtn').addEventListener('click', function(event) {
       fetchData().catch(error => console.error(error));
 });
 
+let closebutton = document.getElementById('close')
+
+closebutton.addEventListener('click', function() {
+    var overlay = document.getElementById('overlay')
+    overlay.style.display = 'none';
+
+    var searchfield = document.getElementById('searchfield');
+    searchfield.value = '';
+});
+
 var starsSection = document.getElementById('stars');
 var starsSectionHeight = starsSection.getBoundingClientRect().height;
 var starsSectionWidth = starsSection.getBoundingClientRect().width;
