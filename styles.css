@@ -106,9 +106,30 @@ p {
     display: none;
   }
 
+  #overlayContent {
+    position: relative;
+    top: 40px;
+  }
+
 #overlayheader {
     display: flex;
     justify-content: center;
+  }
+
+  #overlayinfo {
+    margin: 15px;
+    line-height: 25px;
+  }
+
+  #close {
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: 450px;
+    min-width: 40px;
+    min-height: 40px;
+    color: #ffffff;
+    font-family: 'Secular One', serif;
   }
 
 #planet-box {
