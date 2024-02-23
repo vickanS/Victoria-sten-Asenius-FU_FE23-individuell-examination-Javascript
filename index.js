@@ -50,12 +50,31 @@ var starsSection = document.getElementById('stars');
 var starsSectionHeight = starsSection.getBoundingClientRect().height;
 var starsSectionWidth = starsSection.getBoundingClientRect().width;
 
+function createShootingStarAnimation(id, angle) {
+    var styleSheet = document.styleSheets[0];
+    var keyframes = `@keyframes shootingStar${id} {
+        from { transform: translate(0, 0); }
+        to { transform: translate(${Math.cos(angle) * starsSectionWidth}px, ${Math.sin(angle) * starsSectionHeight}px); }
+      }`;
+    styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+}
+
 for (var i = 0; i < 200; i++) {
     var newStar = document.createElement('div');
     newStar.className = 'star';
     newStar.style.top = Math.random() * starsSectionHeight + 'px';
     newStar.style.left = Math.random() * starsSectionWidth + 'px';
-    newStar.style.animationDelay = Math.random() * 5 + 's'; // starta blinkningen vid en slumpmässig tidpunkt
-    newStar.style.animationDuration = Math.random() * 5 + 's'; // blinka i en slumpmässig hastighet
+    newStar.style.animationDelay = Math.random() * 5 + 's';
+    newStar.style.animationDuration = Math.random() * 5 + 's';
+
+    // Endast 10% av stjärnorna blir stjärnfall
+    if (Math.random() < 0.1) {
+        var angle = Math.random() * (Math.PI / 3) + Math.PI / 3;
+        createShootingStarAnimation(i, angle);
+        newStar.style.animationName = 'shootingStar' + i;
+    }
+
     starsSection.appendChild(newStar);
 }
+
+newStar.style.animationDuration = (Math.random() * 20 + 20) + 's'; //stjärnfall varar mellan 20 och 40 sekunder
