@@ -33,7 +33,7 @@ document.getElementById('searchbtn').addEventListener('click', function(event)  
         console.log(filteredData); //arrayen med det filtrerade objektet skrivs ut i konsolen.
       }
       
-      fetchData().catch(error => console.error(error));
+      fetchData();
 });
 
 let closebutton = document.getElementById('close') //lägger till en eventlyssnare på knappen med Id 'close'
