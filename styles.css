@@ -149,7 +149,7 @@ p {
     left: -450px;
     width: 500px;
     height: 500px;
-    background-color: rgb(217, 255, 0);
+    background-color: #FFD029;
     border-radius: 500px;
 }
 
@@ -203,7 +203,7 @@ p {
     left: -90px;
     width: 120px;
     height: 120px;
-    background-color: rgb(242, 242, 168);
+    background-color: #C7AA72;
     border-radius: 120px;
     display: flex;
     justify-content: center;
@@ -215,11 +215,14 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 5px;
-    height: 145px;
+    width: 7px;
+    height: 150px;
     background-color: white;
     transform: rotate(45deg) translate(-50%, -50%);
     transform-origin: top left;
+    border-radius: 100%;
+    box-shadow: 5px 5px 20px rgb(128, 128, 128);
+    filter: blur(1px);
 }
 
 #planet8 {
