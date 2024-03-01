@@ -205,6 +205,21 @@ p {
     height: 120px;
     background-color: rgb(242, 242, 168);
     border-radius: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#planet7::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 145px;
+    background-color: white;
+    transform: rotate(45deg) translate(-50%, -50%);
+    transform-origin: top left;
 }
 
 #planet8 {
